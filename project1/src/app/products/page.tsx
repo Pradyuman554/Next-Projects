@@ -5,7 +5,7 @@ export default function Products(){
     return (
     <>
         <h1>Product List</h1>
-        <Link href={`/products/${productId}`}>Product {productId}</Link>
+        <Link href={`/products/${productId}`} replace>Product {productId}</Link>
     </>
     );
 }

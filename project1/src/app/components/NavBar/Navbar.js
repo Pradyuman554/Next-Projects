@@ -1,6 +1,15 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  {name : "Register", link: "/register"},
+  {name : "Login", link: "/login"},
+  {name : "Forgot Password", link: "/forgot_password"}
+];
 
 export default function NavBar() {
+  const pathname = usePathname();
     return (
       <div className="navbar bg-[#162E49] text-white">
         <div className="navbar-start">
@@ -21,52 +30,27 @@ export default function NavBar() {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <Link href = "/products">Products</Link>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
+
+              {
+                navLinks.map((links) => {
+                  <Link href = {links.link}>{links.name}</Link>
+                }
+                )
+              }
           </div>
           <Link className="btn btn-ghost text-xl" href="/">daisyUI</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link href = "/products" className="text-white">Products</Link>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          <ul className="menu menu-horizontal px-1 ">
+          {
+                navLinks.map((links) => {
+                  const isActive = pathname.startsWith(links.link);
+                  return (
+                    <Link href = {links.link} className={isActive? "bg-white px-4 text-[#162E49]" : "px-4"}>{links.name}</Link>
+                  );
+                }
+                )
+              }
           </ul>
         </div>
         <div className="navbar-end">
