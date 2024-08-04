@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLinks = [
   {name : "Register", link: "/register"},
@@ -10,6 +11,7 @@ const navLinks = [
 
 export default function NavBar() {
   const pathname = usePathname();
+  const [value, setValue] = useState("");
     return (
       <div className="navbar bg-[#162E49] text-white">
         <div className="navbar-start">
@@ -53,8 +55,9 @@ export default function NavBar() {
               }
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end width-full">
+          <input className="text-black" value={value} onChange={(e)=>setValue(e.target.value)}></input>
+          <a className="btn ml-2">Button</a>
         </div>
       </div>
     );
