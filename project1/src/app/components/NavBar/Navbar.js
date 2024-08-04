@@ -6,7 +6,8 @@ import { useState } from "react";
 const navLinks = [
   {name : "Register", link: "/register"},
   {name : "Login", link: "/login"},
-  {name : "Forgot Password", link: "/forgot_password"}
+  {name : "Forgot Password", link: "/forgot_password"},
+  {name: "Products", link: "/products"},
 ];
 
 export default function NavBar() {
