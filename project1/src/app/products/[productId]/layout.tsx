@@ -4,7 +4,6 @@ export default function Page({children} : {
     return (
         <div>
             {children}
-            <footer className = "font-black">Helu</footer>
         </div>
     );
 }

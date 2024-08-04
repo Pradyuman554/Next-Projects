@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 export default function Products(){
+    const productId = 50;
     return (
     <>
         <h1>Product List</h1>
-        <p>Product1</p>
+        <Link href={`/products/${productId}`}>Product {productId}</Link>
     </>
     );
 }
