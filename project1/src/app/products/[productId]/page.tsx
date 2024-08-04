@@ -1,5 +1,7 @@
-export default function Product(){
+export default function Product({params} : {
+    params : {productId : string};
+}){
     return (
-        <h1>This is product 1</h1>
+        <h1>This is product {params.productId}</h1>
     );
 }
