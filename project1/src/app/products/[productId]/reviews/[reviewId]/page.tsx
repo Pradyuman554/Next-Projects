@@ -8,14 +8,18 @@ export default function Review({
     productId: string;
   };
 }) {
+
+  //2 TYPES OF ERRORS:
+  //1.
   if (parseInt(params.reviewId) < 1000) {
     notFound();
   }
 
-  const number = 1;
-  if (number === 1) {
-    throw new Error("Dabba Gol");
-  }
+  //2.
+  // const number = 1;
+  // if (number === 1) {
+  //   throw new Error("Dabba Gol");
+  // }
 
   return (
     <h1>
