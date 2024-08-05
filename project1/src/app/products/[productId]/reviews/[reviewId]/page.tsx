@@ -1,3 +1,5 @@
+"use client";
+
 import { notFound } from "next/navigation";
 
 export default function Review({
@@ -11,15 +13,15 @@ export default function Review({
 
   //2 TYPES OF ERRORS:
   //1.
-  if (parseInt(params.reviewId) < 1000) {
-    notFound();
-  }
+  // if (parseInt(params.reviewId) < 1000) {
+  //   notFound();
+  // }
 
   //2.
-  // const number = 1;
-  // if (number === 1) {
-  //   throw new Error("Dabba Gol");
-  // }
+  const number = 1;
+  if (number === 1) {
+    throw new Error("Dabba Gol");
+  }
 
   return (
     <h1>
