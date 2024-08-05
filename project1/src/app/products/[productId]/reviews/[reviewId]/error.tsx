@@ -6,9 +6,11 @@ export default function ErrorBoundary({
     error : Error;
     reset : ()=>void;
 }
-) {
+)
+{
     return (
         <div>
+            <br></br>
             {error.message} <button onClick={reset}>Try Again</button>
         </div>
     );

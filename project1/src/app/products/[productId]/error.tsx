@@ -1,8 +1,17 @@
 "use client";
-export default function Page() {  
+
+export default function ErrorBoundary({
+    error, reset,
+}:{
+    error : Error;
+    reset : ()=>void;
+}
+)
+
+{
     return (
         <div>
-            Lol failed try.
+            {error.message} <button onClick={reset}>Try Again</button>
         </div>
     );
 }
