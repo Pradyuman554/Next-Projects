@@ -11,7 +11,7 @@ export default function ErrorBoundary({
 {
     return (
         <div>
-            {error.message} <button onClick={reset}>Try Again</button>
+            {error.message} <br/> <button className="border border-black p-1" onClick={reset}>Try Again</button>
         </div>
     );
 }

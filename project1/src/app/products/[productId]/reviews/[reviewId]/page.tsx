@@ -1,6 +1,7 @@
 "use client";
 import { notFound } from "next/navigation";
 
+
 function getRandom(count:number){
   return Math.floor(Math.random() * count);
 }

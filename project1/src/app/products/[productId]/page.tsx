@@ -21,12 +21,6 @@ export const generateMetadata = ({params}:Props):Metadata => {
 export default function Product({params} : {
     params : {productId : string};
 }){
-    const random = getRandomInt(2);
-
-    if(random===1){
-        throw new Error("Random to One Nikla XD");
-    }
-
     const link = `/products/${params.productId}/reviews/1`;
 
     return (
