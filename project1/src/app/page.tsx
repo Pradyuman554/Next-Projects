@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Page from "./products/[productId]/page.tsx";
 
 export default function Home(){
     return <div>

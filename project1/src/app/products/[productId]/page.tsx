@@ -1,6 +1,10 @@
 import {Metadata} from "next";
 import Link from "next/link";
 
+function getRandom(count:number){
+    return Math.floor(Math.random() * count);
+  }
+
 type Props = {
     params:{
         productId:string;
@@ -18,6 +22,9 @@ export default function Product({params} : {
     params : {productId : string};
 }){
     const link = `/products/${params.productId}/reviews/1`;
+
+    const random = getRandom(2);
+    if(random===1) throw new Error("LMAO ye to one hai");
 
     return (
         <>  
