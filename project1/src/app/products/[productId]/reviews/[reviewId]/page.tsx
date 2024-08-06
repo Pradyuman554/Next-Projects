@@ -1,11 +1,6 @@
 "use client";
 import { notFound } from "next/navigation";
 
-
-function getRandom(count:number){
-  return Math.floor(Math.random() * count);
-}
-
 export default function Review({
   params,
 }: {
@@ -15,9 +10,7 @@ export default function Review({
   };
 }) {
 
-  const random = getRandom(2);
-  if(random==1) throw new Error("LMAO ye to one hai");
-
+  
   //2 TYPES OF ERRORS:
   //1.
   // if (parseInt(params.reviewId) < 1000) {
