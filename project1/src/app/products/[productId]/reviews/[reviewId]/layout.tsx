@@ -10,8 +10,6 @@ export default function Page({children} : {
     const random = getRandom(2);
     if(random==1) throw new Error("LMAO ye to one hai");
 
-
-
     return (
         <div>
             {children}

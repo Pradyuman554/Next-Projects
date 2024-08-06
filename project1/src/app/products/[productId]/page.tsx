@@ -1,10 +1,6 @@
 import {Metadata} from "next";
 import Link from "next/link";
 
-function getRandomInt(count: number){
-    return Math.floor(Math.random()*count);
-}
-
 type Props = {
     params:{
         productId:string;

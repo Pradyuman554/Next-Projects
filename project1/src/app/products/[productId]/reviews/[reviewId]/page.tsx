@@ -10,7 +10,6 @@ export default function Review({
   };
 }) {
 
-  
   //2 TYPES OF ERRORS:
   //1.
   // if (parseInt(params.reviewId) < 1000) {
