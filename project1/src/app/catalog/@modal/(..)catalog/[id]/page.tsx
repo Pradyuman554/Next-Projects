@@ -1,13 +1,13 @@
 import Image from "next/image";
 import items, { info } from "../../../index";
-import Modal from "@/app/catalog/@model";
+import Modal from "@/app/catalog/@modal";
 
 export default function PhotoModal({
   params: { id },
 }: {
   params: { id: string };
 }) {
-  const photo: WonderImage = wondersImages.find((p) => p.id === id)!;
+  const photo: info = items.find((p) => p.id === id)!;
 
   return (
     <Modal>
@@ -19,8 +19,7 @@ export default function PhotoModal({
 
       <div className="bg-white p-4">
         <h2 className="text-xl font-semibold">{photo.name}</h2>
-        <h3>{photo.photographer}</h3>
-        <h3>{photo.location}</h3>
+        <h3>{photo.color}</h3>
       </div>
     </Modal>
   );
