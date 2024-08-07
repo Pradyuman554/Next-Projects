@@ -1,7 +1,9 @@
+import Card from "@/app/components/Card";
+
 export default function LoginPage() {
-    return (
-            <div className="font-black text-4xl text-black border-[10px] border-red-500">
-                Please login to continue.
-            </div>
-    );
+  return (
+    <>
+      <Card>Please login to continue</Card>
+    </>
+  );
 }
