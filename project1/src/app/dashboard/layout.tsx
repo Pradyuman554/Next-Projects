@@ -11,7 +11,6 @@ export default function Layout({
   users: React.ReactNode;
   login: React.ReactNode;
 }) {
-
   const isLoggedin = true;
 
   return isLoggedin ? (
