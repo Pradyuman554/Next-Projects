@@ -31,3 +31,5 @@ const items : info[] = [
         src:trousers,
     }
 ]
+
+export default items;
