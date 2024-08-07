@@ -4,8 +4,9 @@ import Link from "next/link";
 
 export default function Catalog() {
     return (
-        <div>
-            <h1 className="flex justify-center text-4xl font-black mt-5 underline underline-offset-1">Catalog</h1>
+        <>
+        <h1 className="flex justify-center text-4xl font-black m-5 underline underline-offset-1">Catalog</h1>
+        <div className="flex gap-10 justify-center">
             {
                 photos.map((photo)=>(
                     <div>
@@ -13,12 +14,13 @@ export default function Catalog() {
                         <Image
                             alt={photo.name}
                             src={photo.src}
-                            className = "w-full object-cover"
+                            className = "w-[300px] h-[40vh] object-cover"
                         />
                         </Link>
                     </div>
                 ))
             }
         </div>
+        </>
     );
 }
