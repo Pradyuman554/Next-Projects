@@ -7,7 +7,7 @@ export default function Notifications() {
             <Card>
             This is the Notifications page.
             </Card>
-            <Link className="flex justify-center" href="/dashboard/archived">Go to archived</Link>       
+            <Link className="flex justify-center" href="/dashboard/archived">Go to archived.</Link>       
         </>
     );
 }

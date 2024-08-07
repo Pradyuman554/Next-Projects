@@ -1,7 +1,7 @@
 export default function defaultrevenue() {
     return (
-        <div className="font-black text-xl text-blue-500">
-            This is the normal page.
+        <div className="font-black text-xl text-blue-500 border-2">
+            Revenue component
         </div>
     );
 }
