@@ -1,7 +1,9 @@
-export default function Page() {
+import Card from '@/app/components/Card';
+
+export default function Users() {
     return (
-        <div className="font-black text-xl text-orange-500">
-            This is the Notifications page.
-        </div>
+        <Card>
+            This is the Users page.
+        </Card>
     );
 }

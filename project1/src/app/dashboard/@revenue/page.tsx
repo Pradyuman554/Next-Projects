@@ -1,7 +1,9 @@
-export default function Page() {
+import Card from "@/app/components/Card";
+
+export default function Revenue() {
     return (
-        <div className="font-black text-xl text-red-500">
+        <Card>
             This is the revenue page.
-        </div>
+        </Card>
     );
 }
