@@ -8,6 +8,7 @@ const navLinks = [
   {name : "Login", link: "/login"},
   {name : "Forgot Password", link: "/forgot_password"},
   {name: "Products", link: "/products"},
+  {name: "Dashboard", link:"/dashboard"},
 ];
 
 export default function NavBar() {

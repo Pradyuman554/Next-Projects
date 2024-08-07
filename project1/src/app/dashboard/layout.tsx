@@ -10,7 +10,7 @@ export default function Layout({
   users: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="flex">
       <div>{children}</div>
       <div>{revenue}</div>
       <div>{notifications}</div>
