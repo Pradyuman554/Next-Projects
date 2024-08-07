@@ -3,8 +3,6 @@ import { StaticImageData } from "next/image";
 import attire from "./photos/attire.webp";
 import pajamas from "./photos/pajamas.jpg";
 import trousers from "./photos/trousers.jpg";
-import TShirt from "./photos/TShirt.jpg";
-import TShirt2 from "./photos/TShirt2.jpg";
 
 export type info = {
     id:string;
