@@ -7,7 +7,7 @@ export default function Page({children} : {
 }) {
 
     const random = getRandom(2);
-    if(random==1) throw new Error("LMAO ye to one hai");
+    if(random==1) throw new Error("Product Screen main error");
 
     return (
         <div>
