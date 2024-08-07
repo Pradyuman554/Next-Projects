@@ -10,8 +10,6 @@ export default function Page({children, notifications, revenue, users} : {
         <div>{notifications}</div>
         <div>{revenue}</div>
         <div>{users}</div>
-        
-        
         </div>
     );
 }
