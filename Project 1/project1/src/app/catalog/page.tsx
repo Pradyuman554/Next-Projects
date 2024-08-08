@@ -10,7 +10,7 @@ export default function Catalog() {
             {
                 photos.map((photo)=>(
                     <div>
-                        <Link key={photo.id} href={`/catalog/photos/${photo.name}`}>Link to photo
+                        <Link key={photo.id} href={`/catalog/${photo.id}`}>Link to photo
                         <Image
                             alt={photo.name}
                             src={photo.src}
