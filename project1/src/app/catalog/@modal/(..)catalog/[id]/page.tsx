@@ -1,6 +1,6 @@
 import Image from "next/image";
 import items, { info } from "../../../index";
-import Modal from "@/app/catalog/@modal";
+import Modal from "@/app";
 
 export default function PhotoModal({
   params: { id },
