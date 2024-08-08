@@ -1,5 +1,11 @@
-import {data} from "../data";
+import { data } from "../data";
 
-export async function GET({id}:{id:string}){
-    return data.filter((p)=>p.id===id);
+export async function GET(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
+
+    const comment = data.filter((p)=>(p.id)==params.id);
+
+  return Response.json(comment);
 }
