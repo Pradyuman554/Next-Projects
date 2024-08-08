@@ -5,7 +5,7 @@ export default function Page({params : {id},} : {
     params : {id : string};
 }) {
 
-    const photo : info = items.find((p)=>p.id==id)!;
+    const photo : info = items.find((p)=>p.id===id)!;
 
     return (
         <div>
