@@ -1,10 +1,11 @@
 import { NextRequest } from "next/server";
-import { headers } from "next/headers";
+import { headers, cookies } from "next/headers";
 
 export async function GET(request : NextRequest) {
   const headerlist = headers();
 
     const theme = request.cookies.get("theme");
+    cookies().set("Sasrikal","Paaji");
 
   console.log(headerlist.get("Authorization"),theme);
   return new Response("<h1>Done</h1>", {
