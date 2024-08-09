@@ -1,7 +1,7 @@
 export const data = [
     {
         id:"1",
-        name:"Pradyuman",
+        name:"Pradyuman achha baccha hai",
         uid:"22BCS10813",
         love_status:"Error 404",
     },

@@ -1,8 +1,9 @@
 import {data} from "./data";
+import { NextRequest } from "next/server";
 
-export async function GET(){
-    return Response.json(data);
-}
+// export async function GET(){
+//     return Response.json(data);
+// }
 
 export async function POST(request:Request){
     const comment = await request.json();
@@ -22,3 +23,10 @@ export async function POST(request:Request){
         }
     );
 }
+
+export async function GET(request: NextRequest) {
+    const param = request.nextUrl.searchParams;
+    const query = param.get("query"); // Get the value of query
+    const comm = query ? data.filter(p=>p.name.includes(query)) : data;
+    return Response.json(comm);
+  }
