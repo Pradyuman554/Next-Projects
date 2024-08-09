@@ -9,7 +9,7 @@ export async function GET(
   const id = parseInt(params.id);
 
   if (id > data.length) {
-    redirect('/data');
+    redirect('/comments');
   }
 
   const comment = data.filter((p) => p.id == params.id);
