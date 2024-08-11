@@ -3,6 +3,8 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { ClientSide } from "@/utils/client-utils";
+
 import React from "react";
 import Slider from "react-slick";
 
@@ -19,10 +21,10 @@ export default function ClientRoutePage() {
   };
 
   return (
-    <div>
+    <div className="m-3">
         ClientRoutePage
 
-      <Slider {...settings} className="border border-black mt-14 max-w-[50%] mx-auto text-center min-h-14">
+      {/* <Slider {...settings} className="border border-black mt-14 max-w-[50%] mx-auto text-center min-h-14">
         <div>
           <h3>1</h3>
         </div>
@@ -41,7 +43,12 @@ export default function ClientRoutePage() {
         <div>
           <h3>6</h3>
         </div>
-      </Slider>
+      </Slider> */}
+
+        <br/>
+
+        <ClientSide/>
+
       {/* {result} */}
     </div>
   );
