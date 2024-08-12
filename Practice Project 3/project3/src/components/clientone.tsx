@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 
-export const ClientOne = () => {
-    const [input, setInput] = useState("Pradyuman");
+export const ClientOne = ({children}:{children:React.ReactNode}) => {
+    // const [input, setInput] = useState("Pradyuman");
     return (
-        <div>Client Page 1</div>
+        <div>Client Page 1
+            <br/>
+            {children}
+        </div>
     );
 }
