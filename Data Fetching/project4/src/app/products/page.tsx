@@ -5,7 +5,9 @@ type Post = {
 }
 
 export default async function Products() {
-    const response = await fetch("http://localhost:3001/posts");
+    const response = await fetch("http://localhost:3001/posts", {
+        cache : "no-store"
+    });
     const posts = await response.json();
     return (
         <ul>

@@ -1,9 +1,9 @@
 {
     "posts": [
-      { "id": 1, "title": "json-server", "author": "omg" }
+      { "id": 1, "title": "json-server", "author": "omfg" }
     ],
     "comments": [
-      { "id": 1, "body": "some second comments", "postId": 1 }
+      { "id": 1, "body": "some third comments", "postId": 1 }
     ],
     "profile": { "name": "typicode" }
   }
