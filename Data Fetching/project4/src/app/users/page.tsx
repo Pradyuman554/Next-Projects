@@ -1,12 +1,16 @@
 type Users = {
   id: number;
   name: string;
-  phone: string;
+  email: string;
 };
 
 export default async function Users() {
   await new Promise((resolve)=>setTimeout(resolve,2000));
-  const response = await fetch("https://jsonplaceholder.typicode.com/users123");
+  const response = await fetch("https://jsonplaceholder.typicode.com/users",{
+    next:{
+      revalidate: 10,
+    }
+  });
   const users = await response.json();
   console.log(users);
   return (
@@ -18,7 +22,7 @@ export default async function Users() {
           return (
             <div key={user.id} className="border-[7px] border-green-400 m-8">
               <p>{user.name}</p>
-              <p>{user.phone}</p>
+              <p>{user.email}</p>
             </div>
           );
         })}
