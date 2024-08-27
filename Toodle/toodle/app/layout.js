@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   const header = (
     <header className="flex gap-4 p-4 sm:p-8 items-center justify-between text-lime-600">
     <h1 className={' '+fugaz.className}>Toodle</h1>
-    <div className="flex items-center justify-between">PLACEHOLDER</div>
+    <div className="flex items-center justify-between">PLACEHOLDER CTA || STATS</div>
     </header>
   )
 
